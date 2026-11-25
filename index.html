@@ -166,6 +166,15 @@ blockquote{margin:28px 0 0;padding:0 0 0 22px;border-left:3px solid var(--red);f
 .tile span{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;background:linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,0));color:#fff;font:600 15px "Barlow Condensed",sans-serif;text-transform:uppercase}
 .tile--big{grid-row:span 2;grid-column:span 2}.tile--tall{grid-row:span 2}
 .tile--wide{grid-column:span 2}
+.docs__title{margin:56px 0 20px}
+.docs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.doc{display:flex;flex-direction:column;gap:8px;text-decoration:none;background:var(--card);border:1px solid var(--line);padding:10px}
+.doc img{width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;background:#ece8e0}
+.doc span{font:600 15px/1.3 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.02em}
+.doc:hover{border-color:var(--red2)}
+.docs__note{margin-top:14px;font-size:14px}
+@media(max-width:900px){.docs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 .play{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:14px}
 @media(max-width:800px){.gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:180px}}
 .insta{display:inline-block;margin-top:24px;font:600 20px "Barlow Condensed",sans-serif;color:var(--red2);text-decoration:none}
@@ -214,7 +223,7 @@ footer p{max-width:90ch;font-size:14px}
       <a href="#basarilar" data-tr="Başarılar" data-de="Erfolge">Başarılar</a>
       <a href="#spor" data-tr="Spor" data-de="Sport">Spor</a>
       <a href="#galeri" data-tr="Galeri" data-de="Galerie">Galeri</a>
-      <a href="#basin" data-tr="Basın" data-de="Presse">Basın</a>
+      <a href="#basin" data-tr="Basın &amp; Belgeler" data-de="Presse &amp; Urkunden">Basın &amp; Belgeler</a>
       <a href="#iletisim" data-tr="İletişim" data-de="Kontakt">İletişim</a>
     </nav>
     <div class="lang" role="group" aria-label="Dil / Sprache">
@@ -409,6 +418,17 @@ footer p{max-width:90ch;font-size:14px}
     </div>
     <figure class="clip wide"><img src="assets/basin-pendik.jpg" alt="Hamza Yerlikaya Spor Kulübü, Pendik – Kick Box antrenörü Mustafa Özel" loading="lazy" width="1400" height="413">
       <figcaption data-tr="Pendik · Hamza Yerlikaya Spor Kulübü: Kulüp başkanı ve Kick Box antrenörü Mustafa Özel. Sporcular Edirne'deki uluslararası turnuvadan madalyalarla döndü." data-de="Pendik · Sportverein Hamza Yerlikaya: Vereinsvorsitzender und Kickbox-Trainer Mustafa Özel. Seine Athleten kehrten mit Medaillen vom internationalen Turnier in Edirne zurück.">Pendik · Hamza Yerlikaya Spor Kulübü: Kulüp başkanı ve Kick Box antrenörü Mustafa Özel. Sporcular Edirne'deki uluslararası turnuvadan madalyalarla döndü.</figcaption></figure>
+    <h3 class="docs__title" data-tr="Belgeler" data-de="Urkunden">Belgeler</h3>
+    <div class="docs">
+      <a class="doc" href="assets/belge-wfmc-dan.jpg" target="_blank" rel="noopener"><img src="assets/belge-wfmc-dan.jpg" alt="WFMC MMA · 1. Dan (2016)" loading="lazy" width="1050" height="1400"><span data-tr="WFMC MMA · 1. Dan (2016)" data-de="WFMC MMA · 1. Dan (2016)">WFMC MMA · 1. Dan (2016)</span></a>
+      <a class="doc" href="assets/belge-wfmc-antrenor.jpg" target="_blank" rel="noopener"><img src="assets/belge-wfmc-antrenor.jpg" alt="WFMC MMA · 1. Kademe Yardımcı Antrenör (2016)" loading="lazy" width="1400" height="1050"><span data-tr="WFMC MMA · 1. Kademe Yardımcı Antrenör (2016)" data-de="WFMC MMA · Assistenztrainer Stufe 1 (2016)">WFMC MMA · 1. Kademe Yardımcı Antrenör (2016)</span></a>
+      <a class="doc" href="assets/belge-katilim-balkan.jpg" target="_blank" rel="noopener"><img src="assets/belge-katilim-balkan.jpg" alt="3. Wushu Kungfu Balkan Şampiyonası, Edirne · Katılım Belgesi (Haziran 2016)" loading="lazy" width="1400" height="1050"><span data-tr="3. Wushu Kungfu Balkan Şampiyonası, Edirne · Katılım Belgesi (Haziran 2016)" data-de="3. Wushu-Kungfu-Balkanmeisterschaft, Edirne · Teilnahmeurkunde (Juni 2016)">3. Wushu Kungfu Balkan Şampiyonası, Edirne · Katılım Belgesi (Haziran 2016)</span></a>
+      <a class="doc" href="assets/belge-duan.jpg" target="_blank" rel="noopener"><img src="assets/belge-duan.jpg" alt="Türkiye Wushu Federasyonu · 1. Duan (2016)" loading="lazy" width="1400" height="1050"><span data-tr="Türkiye Wushu Federasyonu · 1. Duan (2016)" data-de="Türkischer Wushu-Verband · 1. Duan (2016)">Türkiye Wushu Federasyonu · 1. Duan (2016)</span></a>
+      <a class="doc" href="assets/belge-yardimci-antrenor.jpg" target="_blank" rel="noopener"><img src="assets/belge-yardimci-antrenor.jpg" alt="Türkiye Wushu Federasyonu · 1. Kademe Yardımcı Antrenör (2016)" loading="lazy" width="1050" height="1400"><span data-tr="Türkiye Wushu Federasyonu · 1. Kademe Yardımcı Antrenör (2016)" data-de="Türkischer Wushu-Verband · Assistenztrainer Stufe 1 (2016)">Türkiye Wushu Federasyonu · 1. Kademe Yardımcı Antrenör (2016)</span></a>
+      <a class="doc" href="assets/belge-hakem-diploma.jpg" target="_blank" rel="noopener"><img src="assets/belge-hakem-diploma.jpg" alt="Türkiye Wushu Federasyonu · Aday Hakem Diploması (2016)" loading="lazy" width="1050" height="1400"><span data-tr="Türkiye Wushu Federasyonu · Aday Hakem Diploması (2016)" data-de="Türkischer Wushu-Verband · Kampfrichter-Diplom, Anwärter (2016)">Türkiye Wushu Federasyonu · Aday Hakem Diploması (2016)</span></a>
+      <a class="doc" href="assets/belge-hakem-kart.jpg" target="_blank" rel="noopener"><img src="assets/belge-hakem-kart.jpg" alt="Sakarya Wushu İl Temsilciliği · Hakem kartı" loading="lazy" width="1050" height="1400"><span data-tr="Sakarya Wushu İl Temsilciliği · Hakem kartı" data-de="Wushu-Landesvertretung Sakarya · Kampfrichter-Ausweis">Sakarya Wushu İl Temsilciliği · Hakem kartı</span></a>
+    </div>
+    <p class="soft docs__note" data-tr="Doğum tarihi, kayıt numaraları ve imzalar gizlilik nedeniyle kapatılmıştır." data-de="Geburtsdatum, Registernummern und Unterschriften wurden aus Datenschutzgründen abgedeckt.">Doğum tarihi, kayıt numaraları ve imzalar gizlilik nedeniyle kapatılmıştır.</p>
   </div>
 </section>
 
